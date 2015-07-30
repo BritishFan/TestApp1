@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -70,5 +71,19 @@ public class MainActivity extends ActionBarActivity {
                 break;
         }
 
+    }
+
+    public void onRBClicked(View view) {
+        RadioGroup radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
+        int id = radioGroup.getCheckedRadioButtonId();
+
+        switch (id) {
+            case R.id.rbMale:
+                //
+                break;
+            case R.id.rbFemale:
+                //
+                break;
+        }
     }
 }
